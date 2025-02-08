@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --dark-one: #151515;
+    --dark-two: #212121;
+    --gray-one: #424242;
+    --primary: #FFC107;
+    --primary-light: #ffd54f;
+    --primary-dark: #ff8f00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 18fr 1fr;
+
+    height: 100dvh;
+    width: 100%;
+    margin: 0;
+
+    font-family: "Merriweather Sans";
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2.375;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ul, li {
+    text-decoration: none;
+    display: inline-block;
+    user-select: none;
+
+}
+
+li:hover {
+    
+}
+
+svg {
+    max-width: 40px;
+}
+
+svg:hover {
+    fill: var(--primary-light);
+}
+
+.font-light {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2.375;
+}
+
+.font-heavy {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.375;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.375;
+    color: var(--primary);
+    user-select: none;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-one);
+    box-shadow: 0 0 12px 12px #00000044;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+footer {
+    align-items: center;
+    background-color: var(--dark-two);
+    color: var(--primary);
+    padding-bottom: 16px;
+    user-select: none;
+}
+
+footer > a > div {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+footer > a > div:hover {
+    color: var(--primary-light);
+    fill: var(--primary-light);
+    cursor: pointer;
+}
+
+.container-main {
+    padding: 2rem 6rem 1rem 6rem;
+    background-color: var(--dark-two);
+    z-index: -1;
+    overflow: scroll;
+
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr);
+    gap: 48px;
+}
+
+.recipe-card {
+    border-radius: 12px;
+    background-color: blue;
+    border: 2px solid white;
+    max-height: 20rem;
+
+}
